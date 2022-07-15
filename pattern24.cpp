@@ -25,11 +25,13 @@ int main()
             j++;
         }
 
-        num = num - 1;
-        while (num > i)
+        num = 2 * i - 2;
+        int k = 1;
+        while (k <= i - 1)
         {
-            cout << num - 1;
+            cout << num;
             num--;
+            k++;
         }
 
         cout << endl;
