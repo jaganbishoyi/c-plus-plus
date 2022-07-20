@@ -6,7 +6,7 @@ int main()
     int n;
     cin >> n;
 
-    int i = 1;
+    int i = 0;
     while (i <= n)
     {
         int square = i * i;
