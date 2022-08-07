@@ -12,7 +12,7 @@ void spiralPrint(int **input, int nRows, int nCols)
     while (count < (nRows * nCols))
     {
         // Print First row
-        for (int i = FR; i <= LC; i++)
+        for (int i = FR; i <= LC && count < nRows * nCols; i++)
         {
             cout << input[FR][i] << " ";
             count++;
@@ -20,7 +20,7 @@ void spiralPrint(int **input, int nRows, int nCols)
         FR++;
 
         // Print last Column
-        for (int i = FR; i <= LR; i++)
+        for (int i = FR; i <= LR && count < nRows * nCols; i++)
         {
             cout << input[i][LC] << " ";
             count++;
@@ -28,7 +28,7 @@ void spiralPrint(int **input, int nRows, int nCols)
         LC--;
 
         // Print Last Row
-        for (int i = LC; i >= FC; i--)
+        for (int i = LC; i >= FC && count < nRows * nCols; i--)
         {
             cout << input[LR][i] << " ";
             count++;
@@ -36,7 +36,7 @@ void spiralPrint(int **input, int nRows, int nCols)
         LR--;
 
         // Print First Column
-        for (int i = LR; i >= FR; i--)
+        for (int i = LR; i >= FR && count < nRows * nCols; i--)
         {
             cout << input[i][FC] << " ";
             count++;
